@@ -1,8 +1,8 @@
 {
-  "name": "react-scripts-ts",
+  "name": "@wickedev/react-scripts-ts",
   "version": "2.16.0",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "wmonk/create-react-app",
+  "repository": "wickedev/create-react-ts-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=6"
