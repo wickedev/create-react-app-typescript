@@ -105,11 +105,17 @@ module.exports = function(
 
   // Install dev dependencies
   const types = [
+    '@types/jest',
     '@types/node',
     '@types/react',
     '@types/react-dom',
-    '@types/jest',
+    '@types/react-router',
+    '@types/react-router-dom',
     'typescript',
+    'node-sass',
+    'sass-loader',
+    'style-loader',
+    'resolve-url-loader',
   ];
 
   console.log(
@@ -147,7 +153,7 @@ module.exports = function(
     console.log(`Installing react and react-dom using ${command}...`);
     console.log();
 
-    const proc = spawn.sync(command, args.concat(['react', 'react-dom']), {
+    const proc = spawn.sync(command, args.concat(['mobx', 'react-mobx', 'react', 'react-dom', 'react-router', 'react-router-dom']), {
       stdio: 'inherit',
     });
     if (proc.status !== 0) {
