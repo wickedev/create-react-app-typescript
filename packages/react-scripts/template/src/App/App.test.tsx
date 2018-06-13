@@ -1,9 +1,9 @@
+import App from 'App'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import App from 'src/App'
 
 it('renders without crashing', () => {
     const div = document.createElement('div')
-    ReactDOM.render(<App/>, div)
+    ReactDOM.render(<App initialCount={0}/>, div)
     ReactDOM.unmountComponentAtNode(div)
 })

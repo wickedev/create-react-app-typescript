@@ -1,11 +1,11 @@
+import App from 'App'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import App from 'src/App'
-import 'src/styles.scss'
-import registerServiceWorker from 'src/utils/registerServiceWorker'
+import 'styles.scss'
+import registerServiceWorker from 'utils/registerServiceWorker'
 
 ReactDOM.render(
-    <App/>,
+    <App initialCount={0}/>,
     document.getElementById('root') as HTMLElement
 )
 registerServiceWorker()
