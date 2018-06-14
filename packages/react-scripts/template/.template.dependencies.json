@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mobx": null,
+    "mobx-react": null,
+    "react-router": null,
+    "react-router-dom": null
+  },
+  "devDependencies": {
+    "@types/react-router": null,
+    "@types/react-router-dom": null,
+    "node-sass": null,
+    "resolve-url-loader": null,
+    "sass-loader": null,
+    "style-loader": null
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@wickedev/react-scripts-ts",
-  "version": "2.16.5",
+  "version": "2.16.33",
   "description": "Configuration and scripts for Create React App.",
   "repository": "wickedev/create-react-ts-app",
   "license": "BSD-3-Clause",
