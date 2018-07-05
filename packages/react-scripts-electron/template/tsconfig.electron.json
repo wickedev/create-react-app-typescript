@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "build/main",
+        "module": "commonjs",
+        "rootDir": "src/main"
+    },
+    "exclude": [
+        "src/app"
+    ]
+}

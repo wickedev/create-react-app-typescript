@@ -1,6 +1,6 @@
 {
-  "name": "@wickedev/react-scripts-ts",
-  "version": "2.16.36",
+  "name": "@wickedev/react-scripts-electron",
+  "version": "2.16.26",
   "description": "Configuration and scripts for Create React App.",
   "repository": "wickedev/create-react-ts-app",
   "license": "BSD-3-Clause",
@@ -18,9 +18,10 @@
     "utils"
   ],
   "bin": {
-    "react-scripts-ts": "./bin/react-scripts-ts.js"
+    "react-scripts-electron": "./bin/react-scripts-electron.js"
   },
   "dependencies": {
+    "@wickedev/react-electron-dev-utils": "^1.0.2",
     "autoprefixer": "7.1.6",
     "babel-jest": "^22.1.0",
     "babel-loader": "^7.1.2",
@@ -41,9 +42,9 @@
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
     "raf": "3.4.0",
-    "source-map-loader": "^0.2.1",
     "react-dev-utils": "^5.0.1",
     "resolve": "1.6.0",
+    "source-map-loader": "^0.2.1",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
     "ts-jest": "22.0.1",

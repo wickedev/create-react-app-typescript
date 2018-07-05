@@ -1,0 +1,19 @@
+{
+    "productName": "Typescript Electron",
+    "appId": "org.name.TSE",
+    "files": [
+        "app/",
+        "main/"
+    ],
+    "directories": {
+        "app": "build",
+        "buildResources": "src/resources",
+        "output": "releases"
+    },
+    "mac": {
+        "target": "dmg"
+    },
+    "win": {
+        "target": "nsis"
+    }
+}
