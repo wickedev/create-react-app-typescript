@@ -18,6 +18,7 @@ const fs = require("fs-extra");
 const path = require("path");
 const chalk = require("chalk");
 const spawn = require("react-dev-utils/crossSpawn");
+const { modifiyPackageJson } =  require('@wickedev/react-electron-dev-utils');
 
 module.exports = function(
   appPath,
@@ -40,11 +41,15 @@ module.exports = function(
 
   // Setup the script rules
   appPackage.scripts = {
-    start: "react-scripts-ts start",
-    build: "react-scripts-ts build",
-    test: "react-scripts-ts test --env=jsdom --watchAll --coverage",
-    eject: "react-scripts-ts eject"
+    start: "react-scripts-electron start",
+    build: "react-scripts-electron build",
+    package: "react-scripts-electron package",
+    release: "react-scripts-electron release --win",
+    test: "react-scripts-electron test --env=jsdom --watchAll --coverage",
+    eject: "react-scripts-electron eject"
   };
+
+  modifiyPackageJson(appPackage);
 
   fs.writeFileSync(
     path.join(appPath, "package.json"),

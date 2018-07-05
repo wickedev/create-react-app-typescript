@@ -1,0 +1,15 @@
+{
+  "name": "@wickedev/react-electron-dev-utils",
+  "version": "1.0.3",
+  "description": "react electron dev script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wickedev",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cross-spawn": "^6.0.5"
+  }
+}
