@@ -1,8 +1,8 @@
-import "app/App/styles.scss";
-import logo from "app/assets/logo.svg";
-import { observable } from "mobx";
-import { observer } from "mobx-react";
-import * as React from "react";
+import "app/App/styles.scss"
+import logo from "app/assets/logo.svg"
+import { observable } from "mobx"
+import { observer } from "mobx-react"
+import * as React from "react"
 
 export interface IAppProps {
     initialCount: number
@@ -11,11 +11,11 @@ export interface IAppProps {
 @observer
 class App extends React.Component<IAppProps> {
 
-    @observable private count: number;
+    @observable private count: number
 
     constructor(props: IAppProps) {
-        super(props);
-        this.count = props.initialCount;
+        super(props)
+        this.count = props.initialCount
     }
 
     public render() {
@@ -34,18 +34,18 @@ class App extends React.Component<IAppProps> {
                     <button onClick={this.onClickPlus}>+</button>
                 </div>
             </div>
-        );
+        )
     }
 
     private onClickMinus = (event: React.MouseEvent<HTMLButtonElement>) => {
-        event.preventDefault();
-        this.count--;
-    };
+        event.preventDefault()
+        this.count--
+    }
 
     private onClickPlus = (event: React.MouseEvent<HTMLButtonElement>) => {
-        event.preventDefault();
-        this.count++;
-    };
+        event.preventDefault()
+        this.count++
+    }
 }
 
-export default App;
+export default App
