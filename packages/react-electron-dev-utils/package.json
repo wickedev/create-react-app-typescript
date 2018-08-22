@@ -1,6 +1,6 @@
 {
   "name": "@wickedev/react-electron-dev-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react electron dev script",
   "main": "index.js",
   "scripts": {

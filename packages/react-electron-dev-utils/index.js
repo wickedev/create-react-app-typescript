@@ -70,7 +70,6 @@ const buildPackage = () => {
     "--dir"
   ];
 
-  clean();
   build();
   spawn.sync("electron-builder", args, {
     stdio: "inherit"
@@ -83,7 +82,6 @@ const buildRelease = (platforms) => {
     "electron-builder.json",
   ];
 
-  clean();
   build();
   spawn.sync("electron-builder", args.concat(platforms), {
     stdio: "inherit"

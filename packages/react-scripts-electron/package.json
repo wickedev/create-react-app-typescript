@@ -1,6 +1,6 @@
 {
   "name": "@wickedev/react-scripts-electron",
-  "version": "2.16.32",
+  "version": "2.16.34",
   "description": "Configuration and scripts for Create React App.",
   "repository": "wickedev/create-react-ts-app",
   "license": "BSD-3-Clause",
@@ -21,7 +21,7 @@
     "react-scripts-electron": "./bin/react-scripts-electron.js"
   },
   "dependencies": {
-    "@wickedev/react-electron-dev-utils": "^1.0.2",
+    "@wickedev/react-electron-dev-utils": "^1.0.4",
     "autoprefixer": "7.1.6",
     "babel-jest": "^22.1.0",
     "babel-loader": "^7.1.2",
